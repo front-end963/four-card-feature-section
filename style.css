@@ -1,0 +1,138 @@
+/* starting mobile design first to load faster on mobile devices */
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 0.938rem;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: min(300px, 90%);
+    margin: 50px 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: var(--VeryDarkBlue);
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: var(--VeryDarkBlue);
+}
+
+p {
+    font-size: 0.813rem;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    color: var(--GrayishBlue);
+}
+
+.divs {
+    box-shadow: 5px 10px 15px var(--GrayishBlue);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.divs h3, p {
+    text-align: left;
+}
+
+.divs p {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.divs img {
+    margin-left: 75%;
+}
+
+.divs:nth-of-type(1) {
+    border-top: solid 5px;
+    border-color: var(--Cyan);
+}
+
+.divs:nth-of-type(2) {
+    border-top: solid 5px;
+    border-color: var(--Orange);
+}
+
+.divs:nth-of-type(3) {
+    border-top: solid 5px;
+    border-color: var(--Blue);
+}
+
+#team-builder {
+    border-color: var(--Red);
+}
+
+/* desktop design */
+
+@media screen and (min-width: 376px) {
+
+    main {
+        width: 65%;
+    }
+    
+    #div-blocks {
+        display: flex;
+    }
+
+    .divs {
+        height: 200px;
+        width: 300px;
+    }
+
+    h1, h2 {
+        margin-right: 100px;
+        font-size: 1.563rem;
+    }
+
+    #first-paragraph {
+        margin-left: 200px;
+        padding-left: 20px;
+        padding-right: 350px;
+        text-align: center;
+    }
+
+    #supervisor, #calculator {
+        margin: 100px 0 100px 0;
+    }
+
+    #two-between {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
